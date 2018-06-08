@@ -1,5 +1,8 @@
+# code here!
 class School
-ROSTER = {}
+
+  ROSTER = {}
+
   def initialize(name)
     @name = name
   end
@@ -9,12 +12,8 @@ ROSTER = {}
   end
 
   def add_student(name, grade)
-
-    ROSTER[grade] ||= []
-
+    ROSTER[grade] = [] unless ROSTER[grade] == true
     ROSTER[grade] << name
-
-
   end
 
 
