@@ -11,9 +11,9 @@ class School
     ROSTER
   end
 
-  def add_student(name, grade)
-    ROSTER[grade] = [] unless ROSTER[grade] == true
-    ROSTER[grade] << name
+  def add_student(student_name, grade)
+    ROSTER[grade] ||= []
+    ROSTER[grade] << student_name
   end
 
 
