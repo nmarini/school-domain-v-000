@@ -13,6 +13,6 @@ class School
     ROSTER[grade] = [] unless ROSTER[grade] == true
     ROSTER[grade] << name
   end
-    
+
 
 end
